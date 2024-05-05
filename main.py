@@ -13,14 +13,14 @@ for led in leds:
 
 # rotary breakout COM is set to GND (so the encoder works), so pull gpio up to read a button presses as "on"
 
-encoder = rotaryio.IncrementalEncoder(board.GP14, board.GP15)
+encoder = rotaryio.IncrementalEncoder(board.GP19, board.GP18)
 last_position = 0
 
-buttonCenter = digitalio.DigitalInOut(board.GP20) # "SW1" on rotary breakout
-buttonDown = digitalio.DigitalInOut(board.GP19) # "SW2"
-buttonRight = digitalio.DigitalInOut(board.GP18) # "SW3"
-buttonUp = digitalio.DigitalInOut(board.GP17) # "SW4"
-buttonLeft = digitalio.DigitalInOut(board.GP16) # "SW5"
+buttonCenter = digitalio.DigitalInOut(board.GP17) # "SW1" on rotary breakout
+buttonDown = digitalio.DigitalInOut(board.GP16) # "SW2"
+buttonRight = digitalio.DigitalInOut(board.GP27) # "SW3"
+buttonUp = digitalio.DigitalInOut(board.GP26) # "SW4"
+buttonLeft = digitalio.DigitalInOut(board.GP22) # "SW5"
 buttons = [buttonCenter, buttonDown, buttonRight, buttonUp, buttonLeft]
 for button in buttons:
     button.switch_to_input(pull=digitalio.Pull.UP)
