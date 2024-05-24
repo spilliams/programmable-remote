@@ -32,13 +32,14 @@ displayio.release_displays()
 spi = busio.SPI(clock=board.GP14, MOSI=board.GP15, MISO=board.GP12) # TypeError: command must be of type Pin, not DigitalInOut
 # For the 144x168 display (can be operated at up to 8MHz)
 framebuffer = sharpdisplay.SharpMemoryFramebuffer(spi, board.GP7, width=144, height=168, baudrate=8000000)
+display = framebufferio.FramebufferDisplay(framebuffer)
 
 while True:
     ledBoard.value = not (buttonCenter.value and buttonDown.value and buttonRight.value and buttonUp.value and buttonLeft.value)
     
     position = encoder.position
     if last_position is None or position != last_position:
-        print("Position: {}".format(position))
+        print("Encoder: {}".format(position))
         ledGreen.value = position > last_position
         ledRed.value = position < last_position
         last_position = position
@@ -46,4 +47,4 @@ while True:
         ledGreen.value = False
         ledRed.value = False
     
-    time.sleep(0.01)
+    time.sleep(0.001)
