@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MCU_Module_RaspberryPi_Pico")(type "KiCad")(uri "/Users/spencer/spilliams/programmable-remote/ref/ki-lime-pi-pico-main/kicad/project-libraries/RaspberryPi_Pico/MCU_Module_RaspberryPi_Pico.kicad_sym")(options "")(descr ""))
+  (lib (name "Adafruit USB C microlipo charger-eagle-import")(type "KiCad")(uri "/Users/spencer/spilliams/programmable-remote/ref/Adafruit USB C microlipo charger/Adafruit USB C microlipo charger-eagle-import.kicad_sym")(options "")(descr ""))
+  (lib (name "Adafruit_SharpMemoryDisplay-eagle-import")(type "KiCad")(uri "/Users/spencer/spilliams/programmable-remote/ref/Adafruit_SharpMemoryDisplay/Adafruit_SharpMemoryDisplay-eagle-import.kicad_sym")(options "")(descr ""))
+)

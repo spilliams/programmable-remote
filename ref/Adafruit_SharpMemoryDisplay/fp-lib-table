@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Adafruit_SharpMemoryDisplay")(type "KiCad")(uri "$(KIPRJMOD)/Adafruit_SharpMemoryDisplay.pretty")(options "")(descr ""))
+)

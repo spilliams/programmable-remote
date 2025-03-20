@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Adafruit USB C microlipo charger")(type "KiCad")(uri "$(KIPRJMOD)/Adafruit USB C microlipo charger.pretty")(options "")(descr ""))
+)

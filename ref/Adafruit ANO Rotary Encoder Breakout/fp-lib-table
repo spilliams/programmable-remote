@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Adafruit ANO Rotary Encoder Breakout")(type "KiCad")(uri "$(KIPRJMOD)/Adafruit ANO Rotary Encoder Breakout.pretty")(options "")(descr ""))
+)
